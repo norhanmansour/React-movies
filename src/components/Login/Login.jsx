@@ -40,7 +40,7 @@ return schema.validate(user,{abortEarly:false})
 
    }else{
 
-    let {data}= await axios.post('https://routeegypt.herokuapp.com/signin',user);
+    let {data}= await axios.post('https://sticky-note-fe.vercel.app/signin',user);
     console.log(data);
     if(data.message==='success'){
       localStorage.setItem('userToken',data.token);
